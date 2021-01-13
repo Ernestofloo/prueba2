@@ -1,0 +1,603 @@
+﻿<XMBML version="1.0">
+	<View id="maxistore_store_xmb_main"> 
+		<Attributes> 
+			<Table key="maxistore_main">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/ICON0.PNG</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemAlbum</String></Pair>
+				<Pair key="pic"><String>/dev_hdd0/game/MAXISTORE/PIC1.PNG</String></Pair>
+				<Pair key="pic_notation"><String>WNT_XmbItemAlbum</String></Pair>
+				<Pair key="title"><String>MAXISTORE</String></Pair>
+				<Pair key="info"><String>MAXISTORE 3.0</String></Pair>
+				<Pair key="ingame"><String>disable</String></Pair>
+			</Table>			
+		</Attributes>
+		
+			<Items>
+			<Query 
+				class="type:x-xmb/folder-pixmap"
+				key="maxistore_main"
+				attr="maxistore_main"
+				src="#maxistore_main_items"/>
+			</Items>
+		</View>			
+
+<!-- Menu principal -->	
+   <View id="maxistore_main_items"> 
+		<Attributes>
+			<Table key="juegos_ps3">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/PS3.png</String></Pair>
+				<Pair key="title"><String>Juegos PS3</String></Pair>
+				<Pair key="info"><String>Aquí podras descargar Juegos de PS3</String></Pair>
+			</Table>
+			<Table key="juegos_ps2">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/PS2.png</String></Pair>
+				<Pair key="title"><String>Juegos PS2</String></Pair>
+				<Pair key="info"><String>Aquí podras descargar Juegos de PS2</String></Pair>
+			</Table>
+			<Table key="juegos_psx">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/PSX.png</String></Pair>
+				<Pair key="title"><String>Juegos PS1</String></Pair>
+				<Pair key="info"><String>Aquí podras descargar Juegos de PS1</String></Pair>
+			</Table>
+			<Table key="patch_maxi">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/patch.png</String></Pair>
+				<Pair key="title"><String>Parches PS3</String></Pair>
+				<Pair key="info"><String>Aquí Encontraras Parches para tus juegos</String></Pair>
+			</Table>
+			<Table key="retro_maxi">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/Emuladores.png</String></Pair>
+				<Pair key="title"><String>Juegos Retros</String></Pair>
+				<Pair key="info"><String>Aquí Encontraras Juegos retros</String></Pair>
+				</Table>
+			<Table key="cosas_utiles">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/Personaizacion.png</String></Pair>
+				<Pair key="title"><String>Cosas Utiles</String></Pair>
+				<Pair key="info"><String>Aquí podras las olas,temas,coolbot,hombrews</String></Pair>
+			</Table>
+			<Table key="cosas_opcionales">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/cfg.png</String></Pair>
+				<Pair key="title"><String>Cosas Opcionales de la tienda</String></Pair>
+				<Pair key="info"><String>Aqui Encontraras logos de hen y logos de la tienda</String></Pair>
+			</Table>
+			<Table key="notificaciones_maxi">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/notificaciones icono.png</String></Pair>
+				<Pair key="title"><String>Notificaciones</String></Pair>
+				<Pair key="info"><String>Aquí encontras notificaciones de la tienda.</String></Pair>
+			</Table>
+			<Table key="team_menu">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/Team.png</String></Pair>
+				<Pair key="title"><String>Aqui Encontraras el Team</String></Pair>
+				<Pair key="info"><String>Aqui Encontraras el Team que hizo posible esto</String></Pair>
+			</Table>	 			
+		</Attributes>
+			<Items>	
+            <Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="juegos_ps3" 
+				attr="juegos_ps3"
+				src="#juegos_ps3_main"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="juegos_ps2" 
+				attr="juegos_ps2"
+				src="#juegos_ps2_main"
+				/>	
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="juegos_psx" 
+				attr="juegos_psx"
+				src="#juegos_psx_main"
+				/>	
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="patch_maxi" 
+				attr="patch_maxi"
+				src="#patch_maxi_main"
+				/>	
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="retro_maxi" 
+				attr="retro_maxi"
+				src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/retro/retro_comunidad.xml#retro_comunidad_items"
+				/>
+				  <Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="cosas_utiles" 
+				attr="cosas_utiles"
+				src="#cosas_utiles_main"
+				/>	
+            <Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="cosas_opcionales" 
+				attr="cosas_opcionales"
+				src="#cosas_opcionales_main"
+				/>		
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="notificaciones_maxi" 
+				attr="notificaciones_maxi"
+				src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/notificaciones/notificaciones_comunidad.xml#notificaciones_comunidad_items"
+				/>	
+            <Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="team_menu" 
+				attr="team_menu"
+				src="#team_menu_main"
+				/>					
+			</Items>
+		</View>		
+
+<!-- Juegos PS3 -->	
+
+        <View id="juegos_ps3_main"> 
+		<Attributes> 
+			<Table key="juegos_downloader">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/PKG.png</String></Pair>
+				<Pair key="title"><String>Juegos hen y no hen</String></Pair>
+				<Pair key="info"><String>Aqui encontraras Juegos no Hen</String></Pair>
+			</Table>
+			<Table key="carpeta_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/Carpeta.png</String></Pair>
+				<Pair key="title"><String>Juegos Carpeta</String></Pair>
+				<Pair key="info"><String>Descarga Juegos Carpeta</String></Pair>
+			</Table>
+			<Table key="psnstuff_orde_maxi">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/PSN.png</String></Pair>
+				<Pair key="title"><String>Juegos Europeos y Americanos</String></Pair>
+				<Pair key="info"><String>Descarga Juegos Europeos y Americanos de PSN </String></Pair> 
+			</Table>
+			<Table key="psnstuff_segundo_maxi">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/2do plano.png</String></Pair>
+				<Pair key="title"><String>Descargar juegos PSNSTUFF en segundo plano</String></Pair>
+				<Pair key="info"><String>Descarga Juegos PSNSTUFF en segundo plano</String></Pair> 
+					</Table>
+			<Table key="dlc_maxi">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/dlc.png</String></Pair>
+				<Pair key="title"><String>DLCS</String></Pair>
+				<Pair key="info"><String>Aquí Encontraras todos los dlcs psntuff</String></Pair>
+			</Table>
+			<Table key="licencias_maxi">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/Licencia.png</String></Pair>
+				<Pair key="title"><String>Licencias</String></Pair>
+				<Pair key="info"><String>Aquí Encontraras Licencias de tus juegos</String></Pair>
+				 <Pair key="module_name"><String>webrender_plugin</String></Pair>
+	    	                <Pair key="module_action"><String>http://www.mediafire.com/file/opfgl8r5l1cdc3j/LICENCIAS+15280.pkg/file</String></Pair>
+		    </Table>
+			<Table key="pelis_maxi">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/Peliculas.png</String></Pair>
+				<Pair key="title"><String>Peliculas</String></Pair>
+				<Pair key="info"><String>Aquí Encontraras Peliculas pana</String></Pair>
+			</Table>
+			<Table key="musica_maxi">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/Musica.png</String></Pair>
+				<Pair key="title"><String>Musica</String></Pair>
+				<Pair key="info"><String>Aquí Encontraras Musica</String></Pair>
+			</Table>
+			<Table key="mods_maxi">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/mods.png</String></Pair>
+				<Pair key="title"><String>MODS GTA V</String></Pair>
+				<Pair key="info"><String>Aquí mods pana</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+            <Query
+				class="type:x-xmb/folder-pixmap"
+                key="juegos_downloader"
+                attr="juegos_downloader"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/comunidadps3/comunidad_downloader.xml#comunidad_downloader_items"
+				/>
+				<Query
+				class="type:x-xmb/folder-pixmap"
+                key="carpeta_psn"
+                attr="carpeta_psn"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/carpeta/carpeta_psn.xml#carpeta_psn_items"
+				/>
+				<Query
+				class="type:x-xmb/folder-pixmap"
+                key="psnstuff_orde_maxi"
+                attr="psnstuff_orde_maxi"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/juegospsnstuffornenado/psnstuff_PSN_ordenado.xml#psnstuff_PSN_ord_items"
+				/>
+				<Query
+				class="type:x-xmb/folder-pixmap"
+                key="psnstuff_segundo_maxi"
+                attr="psnstuff_segundo_maxi"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/segundopsntuff/psnstuff_PSN_segundo.xml#psnstuff_PSN_segundo_items"
+				/>
+							<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="dlc_maxi" 
+				attr="dlc_maxi"
+				src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/juegospsnstuff/dlcpsnstuff/dlc_psnstuffguia.xml#dlc_ordenado_items"
+				/>
+            <Query 
+				class="type:x-xmb/module-action"
+		        key="licencias_maxi"
+		        attr="licencias_maxi"
+				/>					
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="pelis_maxi" 
+				attr="pelis_maxi"
+				src="#pelis_maxi_main"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="musica_maxi" 
+				attr="musica_maxi"
+				src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/musica/musica_comunidad.xml#musica_comunidad_items"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="mods_maxi" 
+				attr="mods_maxi"
+				src="#mods_maxi_main"
+				/>
+            </Items>
+		</View>	
+<!-- Juegos PS2 -->
+        
+		<View id="juegos_ps2_main"> 
+		<Attributes> 
+			<Table key="juegosps2_downloader">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/comunidad.png</String></Pair>
+				<Pair key="title"><String>Juegos Pedidos por la comunidad</String></Pair>
+				<Pair key="info"><String>Aqui encontraras los juegos</String></Pair>
+			</Table>
+			<Table key="ps2_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/PSN.png</String></Pair>
+				<Pair key="title"><String>Juegos de siempre (PSNSTUFF)</String></Pair>
+				<Pair key="info"><String>Descarga Juegos PSN</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+            <Query
+				class="type:x-xmb/folder-pixmap"
+                key="juegosps2_downloader"
+                attr="juegosps2_downloader"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/comunidadps2/juegosps2_comunidad.xml#juegosps2_comunidad_items"
+				/>
+				<Query
+				class="type:x-xmb/folder-pixmap"
+                key="ps2_psn"
+                attr="ps2_psn"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/juegospsnstuff/ps2psnstuff/ps2_downloader.xml#ps2_downloader_items"
+				/>
+		    </Items>			
+		</View>		
+<!-- Juegos PSX -->
+        
+		<View id="juegos_psx_main"> 
+		<Attributes> 
+			<Table key="juegosps1_downloader">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/comunidad.png</String></Pair>
+				<Pair key="title"><String>Juegos Pedidos por la comunidad</String></Pair>
+				<Pair key="info"><String>Aqui encontraras los juegos</String></Pair>
+			</Table>
+			<Table key="ps1_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/PSN.png</String></Pair>
+				<Pair key="title"><String>Juegos de siempre (PSNSTUFF)</String></Pair>
+				<Pair key="info"><String>Descarga Juegos PSN</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+            <Query
+				class="type:x-xmb/folder-pixmap"
+                key="juegosps1_downloader"
+                attr="juegosps1_downloader"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/comunidadps1/juegosps1_comunidad.xml#juegosps1_comunidad_items"
+				/>
+				<Query
+				class="type:x-xmb/folder-pixmap"
+                key="ps1_psn"
+                attr="ps1_psn"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/juegospsnstuff/ps1psnstuff/ps1_downloader.xml#ps1_downloader_items"
+				/>
+			</Items>			
+		</View>	
+<!-- Patch PS3 -->
+       
+	   <View id="patch_maxi_main"> 
+		<Attributes> 
+			<Table key="fifa21_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/comunidad/FIFA 21.png</String></Pair>
+				<Pair key="title"><String>FIFA 21</String></Pair>
+				<Pair key="info"><String>Descarga FIFA 21</String></Pair>
+			</Table>
+			<Table key="vrpatch_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/comunidad/PES2021.png</String></Pair>
+				<Pair key="title"><String>VR PATCH</String></Pair>
+				<Pair key="info"><String>Descarga VR PATCH</String></Pair>
+			</Table>
+			<Table key="volta_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/comunidad/Volta.png</String></Pair>
+				<Pair key="title"><String>FIFA VOLTA</String></Pair>
+				<Pair key="info"><String>Descarga FIFA VOLTA</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+            <Query 
+				class="type:x-xmb/folder-pixmap"
+		        key="fifa21_psn"
+		        attr="fifa21_psn"
+				src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/fifa21/fifa21_comunidad.xml#fifa21_comunidad_items"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+                key="vrpatch_psn"
+                attr="vrpatch_psn"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/vrpatch/vrpatch_comunidad.xml#vrpatch_comunidad_items"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+                key="volta_psn"
+                attr="volta_psn"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/volta/volta_comunidad.xml#volta_comunidad_items"
+				/>				
+			</Items>			
+		</View>
+<!-- Peliculas Maxi -->
+        
+		<View id="pelis_maxi_main"> 
+		<Attributes> 
+			<Table key="accion_downloader">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/accion.png</String></Pair>
+				<Pair key="title"><String>Peliculas de Accion</String></Pair>
+				<Pair key="info"><String>Ver peliculas de accion</String></Pair>
+			</Table>
+			<Table key="comedia_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/comedia.png</String></Pair>
+				<Pair key="title"><String>Peliculas de comedia</String></Pair>
+				<Pair key="info"><String>Ver peliculas de Comedia</String></Pair>
+			</Table>
+			<Table key="anime_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/anime.png</String></Pair>
+				<Pair key="title"><String>Peliculas de anime</String></Pair>
+				<Pair key="info"><String>Ver peliculas de anime</String></Pair>
+			</Table>
+			<Table key="animados_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/animados.png</String></Pair>
+				<Pair key="title"><String>Peliculas de animados</String></Pair>
+				<Pair key="info"><String>Ver peliculas de animados</String></Pair>
+			</Table>
+			<Table key="fantasia_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/Fantasia.png</String></Pair>
+				<Pair key="title"><String>Peliculas de Fantasia</String></Pair>
+				<Pair key="info"><String>Ver peliculas de Fantasia</String></Pair>
+			</Table>
+			<Table key="18_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/18.png</String></Pair>
+				<Pair key="title"><String>Peliculas +18</String></Pair>
+				<Pair key="info"><String>Ver peliculas +18</String></Pair>
+			</Table>
+			<Table key="series_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/series.png</String></Pair>
+				<Pair key="title"><String>Series</String></Pair>
+				<Pair key="info"><String>Series</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+            <Query
+				class="type:x-xmb/folder-pixmap"
+                key="accion_downloader"
+                attr="accion_downloader"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/peliculas/accion/accion_comunidad.xml#accion_comunidad_items"
+				/>
+				<Query
+				class="type:x-xmb/folder-pixmap"
+                key="comedia_psn"
+                attr="comedia_psn"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/peliculas/comedia/comedia_downloader.xml#comedia_downloader_items"
+				/>
+				<Query
+				class="type:x-xmb/folder-pixmap"
+                key="anime_psn"
+                attr="anime_psn"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/peliculas/anime/anime_downloader.xml#anime_downloader_items"
+				/>
+				<Query
+				class="type:x-xmb/folder-pixmap"
+                key="animados_psn"
+                attr="animados_psn"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/peliculas/animados/animados_downloader.xml#animados_downloader_items"
+				/>
+				<Query
+				class="type:x-xmb/folder-pixmap"
+                key="18_psn"
+                attr="18_psn"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/peliculas/mayor18/mayor18_downloader.xml#mayor18_downloader_items"
+				/>
+				<Query
+				class="type:x-xmb/folder-pixmap"
+                key="series_psn"
+                attr="series_psn"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/peliculas/series/series_downloader.xml#series_downloader_items"
+				/>
+			</Items>			
+		</View>	
+
+<!-- Mods Maxi -->
+
+        <View id="mods_maxi_main"> 
+		<Attributes> 
+			<Table key="mods_downloader">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/ALVNFUT/ALVNFUT.png</String></Pair>
+				<Pair key="title"><String>Mod Menu ALVNFUTS</String></Pair>
+				<Pair key="info"><String>GOLD EDITION BLES Y BLUS</String></Pair>
+			</Table>
+			<Table key="modsblus_downloader">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/WILSON/WILSON.png</String></Pair>
+				<Pair key="title"><String>Mod Menu WILSON V8</String></Pair>
+				<Pair key="info"><String>Wilson V8 BLES Y BLUS</String></Pair>
+            </Table>
+		</Attributes>
+		<Items>
+            <Query
+				class="type:x-xmb/folder-pixmap"
+		        key="mods_downloader"
+		        attr="mods_downloader"
+				src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/modmenu/alan/alan_downloader.xml#mods_maxia_items"
+				/>
+			    <Query
+				class="type:x-xmb/folder-pixmap"
+		        key="modsblus_downloader"
+		        attr="modsblus_downloader"
+				src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/modmenu/wilson/wilson_downloader.xml#mods_maxiw_items"
+				/>
+			</Items>
+		</View>
+<!-- Cosas utiles -->
+        
+		<View id="cosas_utiles_main"> 
+		<Attributes> 
+			<Table key="cosasutiles_downloader">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/Olas.png</String></Pair>
+				<Pair key="title"><String>Olas</String></Pair>
+				<Pair key="info"><String>Descargar Olas</String></Pair>
+			</Table>
+			<Table key="coolbot_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/Coolbot.png</String></Pair>
+				<Pair key="title"><String>Coolbot</String></Pair>
+				<Pair key="info"><String>Descarga Coolbots</String></Pair>
+			</Table>
+			<Table key="temas_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/TEMAS.png</String></Pair>
+				<Pair key="title"><String>Temas</String></Pair>
+				<Pair key="info"><String>Descarga Temas</String></Pair>
+			</Table>
+			<Table key="homebrew_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/Homebrew.png</String></Pair>
+				<Pair key="title"><String>Homebrew</String></Pair>
+				<Pair key="info"><String>Descarga Homebrew</String></Pair>
+			</Table>
+			<Table key="package_files_segundomaxistore">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/99.png</String></Pair>
+				<Pair key="title"><String>Descargar PKG 99%</String></Pair>
+				<Pair key="info"><String>Descarga tus pkg que se te quedaron en 99%</String></Pair>
+				<Pair key="str_noitem"><String>msg_tool_no_package</String></Pair>
+				<Pair key="child"><String>segment</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+            <Query
+				class="type:x-xmb/folder-pixmap"
+                key="cosasutiles_downloader"
+                attr="cosasutiles_downloader"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/utiles/waves/wave_downloader.xml#wave_downloader_items"
+				/>
+				<Query
+				class="type:x-xmb/folder-pixmap"
+                key="coolbot_psn"
+                attr="coolbot_psn"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/utiles/cooldbot/coldboot_downloader.xml#coldboot_downloader_items"
+				/>
+				<Query
+				class="type:x-xmb/folder-pixmap"
+                key="temas_psn"
+                attr="temas_psn"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/utiles/temas/temas_downloader.xml#temas_downloader_items"
+				/>
+				<Query
+				class="type:x-xmb/folder-pixmap"
+                key="homebrew_psn"
+                attr="homebrew_psn"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/utiles/homebrew/homebrew_downloader.xml#homebrew_downloader_items"
+				/>
+				<Query class="type:x-xmb/folder-pixmap" key="package_files_segundomaxistore" attr="package_files_segundomaxistore" src="#nuevenueve_install_package"/>
+			</Items></View>
+			
+		<View id="nuevenueve_install_package">
+		<Items>
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb00" src="host://localhost/q?path=/dev_hdd0/vsh/task/00000000&suffix=.pkg&subclass=x-host/package"/>
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb01" src="host://localhost/q?path=/dev_hdd0/vsh/task/00000001&suffix=.pkg&subclass=x-host/package"/>
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb02" src="host://localhost/q?path=/dev_hdd0/vsh/task/00000002&suffix=.pkg&subclass=x-host/package"/>
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb03" src="host://localhost/q?path=/dev_hdd0/vsh/task/00000003&suffix=.pkg&subclass=x-host/package"/>
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb04" src="host://localhost/q?path=/dev_hdd0/vsh/task/00000004&suffix=.pkg&subclass=x-host/package"/>
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb05" src="host://localhost/q?path=/dev_hdd0/vsh/task/00000005&suffix=.pkg&subclass=x-host/package"/>
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb06" src="host://localhost/q?path=/dev_hdd0/vsh/task/00000006&suffix=.pkg&subclass=x-host/package"/>
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb07" src="host://localhost/q?path=/dev_hdd0/vsh/task/00000007&suffix=.pkg&subclass=x-host/package"/>
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb08" src="host://localhost/q?path=/dev_hdd0/vsh/task/00000008&suffix=.pkg&subclass=x-host/package"/>
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb09" src="host://localhost/q?path=/dev_hdd0/vsh/task/00000009&suffix=.pkg&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_iso01" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000001&suffix=.iso&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_iso02" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000002&suffix=.iso&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_iso03" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000003&suffix=.iso&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_iso04" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000004&suffix=.iso&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_iso05" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000005&suffix=.iso&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_iso06" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000006&suffix=.iso&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_iso07" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000007&suffix=.iso&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_iso08" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000008&suffix=.iso&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_iso09" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000009&suffix=.iso&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_pkg01" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000001&suffix=.pkg&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_pkg02" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000002&suffix=.pkg&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_pkg03" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000003&suffix=.pkg&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_pkg04" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000004&suffix=.pkg&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_pkg05" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000005&suffix=.pkg&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_pkg06" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000006&suffix=.pkg&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_pkg07" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000007&suffix=.pkg&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_pkg08" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000008&suffix=.pkg&subclass=x-host/package"/>
+            <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_pkg09" src="host://localhost/q?path=/dev_hdd0/vsh/game_pkg/80000009&suffix=.pkg&subclass=x-host/package"/>			
+		</Items></View>
+		
+<!-- Cosas opcionales -->
+
+		<View id="cosas_opcionales_main"> 
+		<Attributes> 
+			<Table key="maxi_downloader">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/HEN.png</String></Pair>
+				<Pair key="title"><String>Iconos de Hen</String></Pair>
+				<Pair key="info"><String>Descargar iconos de Hen</String></Pair>
+			</Table>
+			<Table key="logomaxi_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/ICONO.png</String></Pair>
+				<Pair key="title"><String>Descargar Logos de Maxistore</String></Pair>
+				<Pair key="info"><String>Descarga logo de Maxistore</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+            <Query
+				class="type:x-xmb/folder-pixmap"
+                key="maxi_downloader"
+                attr="maxi_downloader"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/henmaxi/maxi_downloader.xml#maxi_downloader_items"
+				/>
+				<Query
+				class="type:x-xmb/folder-pixmap"
+                key="logomaxi_psn"
+                attr="logomaxi_psn"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/logomaxistore/logomaxi_downloader.xml#logomaxi_downloader_items"
+				/>
+			</Items>			
+		</View>	
+<!-- Team menu -->
+
+		<View id="team_menu_main"> 
+		<Attributes> 
+			<Table key="team_downloader">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/Team.png</String></Pair>
+				<Pair key="title"><String>Creadores</String></Pair>
+				<Pair key="info"><String>Aqui encontraras el Team</String></Pair>
+			</Table>
+			<Table key="ayudaron_psn">
+				<Pair key="icon"><String>/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/XMB/Ayuda.png</String></Pair>
+				<Pair key="title"><String>Los que nos Ayudaron en la tienda</String></Pair>
+				<Pair key="info"><String>Aquie encontraras a los que nos ayudaron</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+            <Query
+				class="type:x-xmb/folder-pixmap"
+                key="team_downloader"
+                attr="team_downloader"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/team/team_downloader.xml#team_downloader_items"
+				/>
+				<Query
+				class="type:x-xmb/folder-pixmap"
+                key="ayudaron_psn"
+                attr="ayudaron_psn"
+                src="xmb://localhost/dev_hdd0/game/MAXISTORE/USRDIR/IMAGENES/MAXI/ayudaron/ayudaron_downloader.xml#ayudaron_downloader_items"
+				/>
+			</Items>			
+		</View>	
+</XMBML>
+		
